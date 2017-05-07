@@ -8,7 +8,7 @@ TEAM_NAME = 0
 FOR_GOALS = 5
 AGAINST_GOALS = 6
 VALID_LIST_SIZE = 7
-STRING_TO_PRINT = 'The team with the smallest difference in ‘for’ and ‘against’ goals is'
+STRING_TO_PRINT = 'The team with the smallest difference in for and against goals is'
 NOT_VAlID_NAME_MSG = 'Not valid name or integers for'
 TEAM = 'Team'
 

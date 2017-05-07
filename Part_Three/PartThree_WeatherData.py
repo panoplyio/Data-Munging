@@ -12,6 +12,7 @@ NOT_VALID_OBJ_MSG = 'Not valid name or integers for'
 
 # Object decoding using object_weather_decoder func
 def object_decoder(line_from_file):
+    print(line_from_file)
     return json.loads(line_from_file, object_hook=object_weather_decoder)
 
 

@@ -3,6 +3,7 @@ from Part_Three import *
 
 class TestDataMunging(unittest.TestCase):
 
+
     def test_compare_difference(self):
         objBigger = PartThree_Shared_Functionality.SharedObject('obj1', 10, 0)
         objSmaller = PartThree_Shared_Functionality.SharedObject('obj2', 0, 0)
@@ -35,13 +36,13 @@ class TestDataMunging(unittest.TestCase):
         self.assertFalse(result)
 
 
-    def test_check_validity_of_the_object_weatherFalseDay(self):
+    def test_check_validity_of_the_object_weatherNegDay(self):
         jsonObj = {u'MxT': u'88', u'MnT': u'59', u'Dy': u'1'}
         result = PartThree_WeatherData.check_validity_of_the_object(jsonObj, '-1', '88', '59')
         self.assertFalse(result)
 
 
-    def test_object_decoder(self):
+    def test_object_decoder_GetObject(self):
         validLine = '{ "Dy": "1", "MxT": "88", "MnT": "59" }'
         obj = PartThree_Shared_Functionality.SharedObject('1', 88, 59)
         result = PartThree_WeatherData.object_decoder(validLine)

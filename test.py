@@ -48,6 +48,5 @@ class TestDataMunging(unittest.TestCase):
         return obj.__dict__ == result.__dict__
 
 
-
 if __name__ == '__main__':
     unittest.main()
